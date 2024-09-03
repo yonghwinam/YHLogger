@@ -37,27 +37,31 @@ logger.info("This is an info message")
 logger.warning("This is a warning message")
 logger.error("This is an error message")
 ```
-
-##### Console
-
-```swift
+##### Console :
  🧐 ExampleTests.swift:27 - defaultLog()> debug
  ✅ ExampleTests.swift:30 - defaultLog()> info
- ⚠️ ExampleTests.swift:33 - defaultLog()> warning
+ ⚠️ ExampleTests.swift:36 - defaultLog()> error
  ❌ ExampleTests.swift:36 - defaultLog()> error
- ```
 
 
 ### Custom Logging Labels
 
 ```swift
-let customLogger = YHLogger(debugLabel: "😆", infoLabel: "😉", warningLabel: "😫", errorLabel: "😡")
+let customLogger = YHLogger(debugLabel: "🩵", 
+                            infoLabel: "💚", 
+                            warningLabel: "💛", 
+                            errorLabel: "💔")
 
 customLogger.debug("Custom debug message")
 customLogger.info("Custom info message")
 customLogger.warning("Custom warning message")
 customLogger.error("Custom error message")
 ```
+##### Console:
+ 🩵 ExampleTests.swift:47 - customLog()> custom debug
+ 💚 ExampleTests.swift:50 - customLog()> custom info
+ 💛 ExampleTests.swift:53 - customLog()> custom warning
+ 💔 ExampleTests.swift:56 - customLog()> custom error
 
 ### Logging HTTP Requests and Responses
 
@@ -76,6 +80,28 @@ do {
     
 } catch {
     logger.error("Failed to encode request parameters or fetch data from the server: \(error.localizedDescription)")
+}
+```
+##### Console:
+
+```
+🛜 ExampleTests.swift:74 - requestLog()> POST https://dummyjson.com/user/login
+Request Headers: {
+  "Content-Type" : "application\/json"
+}
+Body: {
+  "username" : "emilys",
+  "password" : "emilyspass"
+}
+Status Code: 200
+Response Headers: {
+    "Set-Cookie" : "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVC ...
+}
+Result: {
+  "gender" : "female",
+  "firstName" : "Emily",
+  "id" : 1,
+  ...
 }
 ```
 

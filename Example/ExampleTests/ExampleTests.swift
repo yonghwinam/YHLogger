@@ -38,10 +38,10 @@ struct ExampleTests {
     
     @Test func customLog() {
         /// Initialize the logger with custom labels for different log levels
-        let customLogger = YHLogger(debugLabel: "😆",   /// Custom icon for debug logs
-                                    infoLabel: "😉",    /// Custom icon for info logs
-                                    warningLabel: "😫", /// Custom icon for warning logs
-                                    errorLabel: "😡")   /// Custom icon for error logs
+        let customLogger = YHLogger(debugLabel: "🩵",   /// Custom icon for debug logs
+                                    infoLabel: "💚",    /// Custom icon for info logs
+                                    warningLabel: "💛", /// Custom icon for warning logs
+                                    errorLabel: "💔")   /// Custom icon for error logs
         
         /// Log a custom debug message
         customLogger.debug("custom debug")
