@@ -6,14 +6,6 @@
 //
 
 import SwiftUI
-import YHLogger
-
-//let logger = YHLogger(debugIcon: "🤣",
-//                      infoIcon: "!!!!",
-//                      warningIcon: "😱",
-//                      errorIcon: "🤫")
-
-let logger = YHLogger()
 
 struct ContentView: View {
     var body: some View {
@@ -24,12 +16,6 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-        .task {
-            logger.debug("debug")
-            logger.info("info")
-            logger.warning("warning")
-            logger.error("error")
-        }
     }
 }
 
