@@ -38,10 +38,10 @@ logger.warning("This is a warning message")
 logger.error("This is an error message")
 ```
 ##### Console :
- 🧐 ExampleTests.swift:27 - defaultLog()> debug
- ✅ ExampleTests.swift:30 - defaultLog()> info
- ⚠️ ExampleTests.swift:36 - defaultLog()> error
- ❌ ExampleTests.swift:36 - defaultLog()> error
+ - 🧐 ExampleTests.swift:27 - defaultLog()> debug
+ - ✅ ExampleTests.swift:30 - defaultLog()> info
+ - ⚠️ ExampleTests.swift:36 - defaultLog()> error
+ - ❌ ExampleTests.swift:36 - defaultLog()> error
 
 
 ### Custom Logging Labels
@@ -58,10 +58,10 @@ customLogger.warning("Custom warning message")
 customLogger.error("Custom error message")
 ```
 ##### Console:
- 🩵 ExampleTests.swift:47 - customLog()> custom debug
- 💚 ExampleTests.swift:50 - customLog()> custom info
- 💛 ExampleTests.swift:53 - customLog()> custom warning
- 💔 ExampleTests.swift:56 - customLog()> custom error
+ - 🩵 ExampleTests.swift:47 - customLog()> custom debug
+ - 💚 ExampleTests.swift:50 - customLog()> custom info
+ - 💛 ExampleTests.swift:53 - customLog()> custom warning
+ - 💔 ExampleTests.swift:56 - customLog()> custom error
 
 ### Logging HTTP Requests and Responses
 
